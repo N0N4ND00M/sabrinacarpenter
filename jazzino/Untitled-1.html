@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<title>Kraftdiagram – Dynamometer och vikt</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 40px;
+  }
+  .diagram {
+    position: relative;
+    display: inline-block;
+    width: 160px;
+    height: 300px;
+  }
+  /* Dynamometer */
+  .dynamometer {
+    position: absolute;
+    top: 0;
+    left: 75px;
+    width: 10px;
+    height: 120px;
+    background: #ccc;
+    border: 2px solid #555;
+  }
+  /* Linan */
+  .line {
+    position: absolute;
+    top: 120px;
+    left: 79px;
+    width: 2px;
+    height: 30px;
+    background: #666;
+  }
+  /* Vikten */
+  .weight {
+    position: absolute;
+    top: 150px;
+    left: 55px;
+    width: 50px;
+    height: 50px;
+    background: #555;
+    border-radius: 5px;
+  }
+  /* Pilar */
+  .arrow {
+    position: absolute;
+    left: 100px;
+    width: 2px;
+    background: red;
+  }
+  .arrow.up {
+    top: 150px;
+    height: 80px;
+    background: blue;
+  }
+  .arrow.up::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -5px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 10px solid blue;
+  }
+  .arrow.down {
+    top: 200px;
+    height: 80px;
+    background: red;
+  }
+  .arrow.down::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: -5px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 10px solid red;
+  }
+  /* Etiketter */
+  .label {
+    position: absolute;
+    left: 110px;
+    font-weight: bold;
+  }
+  .label.up { top: 100px; color: blue; }
+  .label.down { top: 285px; color: red; }
+  .caption { margin-top: 20px; }
+</style>
+</head>
+<body>
+
+<h2>Kraftdiagram – Dynamometer och vikt</h2>
+
+<div class="diagram">
+  <div class="dynamometer"></div>
+  <div class="line"></div>
+  <div class="weight"></div>
+  <div class="arrow up"></div>
+  <div class="arrow down"></div>
+  <div class="label up">F<sub>D</sub> = 1 N (uppåt)</div>
+  <div class="label down">F<sub>g</sub> = 1 N (nedåt)</div>
+</div>
+
+<p class="caption">Vikten är i jämvikt: F<sub>D</sub> = F<sub>g</sub></p>
+
+</body>
+</html>

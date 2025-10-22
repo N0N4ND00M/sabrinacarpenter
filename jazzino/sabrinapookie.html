@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sabrina Carpenter – Fanpage</title>
+  <meta name="description" content="Inofficiell fansida med biografi, musik, nyheter och galleri.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Sabrina Carpenter</h1>
+
+    <nav class="navbar">
+      <div class="nav-container">
+          <a href="#home" class="logo">Sabrina Carpenter</a>
+          <div class="nav-center">
+              <ul class="nav-links" id="navLinks">
+                  <li><a href="#about">Biografi</a></li>
+                  <li><a href="#music">Musik</a></li>
+                  <li><a href="#gallery">Galleri</a></li>
+                  <li><a href="#news">Nyheter</a></li>
+                  <li class="mobile-auth-buttons">
+                      <a href="#" class="auth-btn login-btn">Login</a>
+                      <a href="#" class="auth-btn signup-btn">Sign Up</a>
+                  </li>
+              </ul>
+              
+          </div>
+          
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <h1>Sabrina Carpenter</h1>
+    <p class="sub">Biografi, musik, bilder – allt på ett ställe.</p>
+    <a class="btn primary" href="#music">Lyssna / Diskografi</a>
+    <a class="btn" href="#gallery">Galleri</a>
+    <div class="cover">
+      <img src="images/sabrinafr.jpg" alt="Sabrina Carpenter live">
+    </div>
+  </section>
+
+  <!-- BIO -->
+  <section id="about">
+    <h2>Biografi</h2>
+    <p class="sub">Kort introduktion om Sabrina.</p>
+    <div class="bio">
+      <article class="card">
+        <p><strong>Sabrina Annlynn Carpenter</strong> föddes 11 maj 1999 i Pennsylvania, USA. 
+          Hon började som skådis i Disney-serien <em>Girl Meets World</em>, men det dröjde inte länge 
+          förrän folk insåg att hon hade en sjuk talang för musik också.</p>
+        <p>2015 kom debutalbumet <em>Eyes Wide Open</em> och efter det har hon bara levlat upp med varje släpp.  
+          <em>Singular: Act I & II</em> (2018–2019) gav oss de första stora bangers, men det riktiga genombrottet 
+          kom 2022 när hon släppte <em>Emails I Can’t Send</em> och låten <em>Nonsense</em> som blev viral överallt.</p>
+        <p>2024 blev <em>Espresso</em> en global hit, och 2025 cementerade hon 
+          sin plats i pop-eliten med albumet <em>Man’s Best Friend</em>.  
+          Sabrina är känd för sin unika stil: blandningen av sårbarhet, humor och pop hooks som fastnar direkt.</p>
+      </article>
+
+      <aside class="card">
+        <div class="facts">
+          <div><b>Född:</b> 11 maj 1999</div>
+          <div><b>Genre:</b> Pop</div>
+          <div><b>Aktiv:</b> 2011–nu</div>
+          <div><b>Roll:</b> Sångerska, låtskrivare, skådespelare</div>
+        </div>
+      </aside>
+    </div>
+  </section>
+  
+  <!-- MUSIK -->
+  <section id="music">
+    <h2>Musik & Discography</h2>
+
+    <div class="grid">
+      <div class="card album">
+        <img src="images/albumcover1.jpg" alt="Album 1">
+        <h4>Albumtitel 1</h4>
+        <p>2016 • EVOLution är Sabrinas andra studioalbum från 2016, där hon visar en mer mogen sida och går från den klassiska tonårspopen till ett mer dansigt och vuxet popsound.</p>
+      </div>
+      <div class="card album">
+        <img src="images/albumcover4.jpg" alt="Album 2">
+        <h4>Albumtitel 2</h4>
+        <p>2025 • Man’s Best Friend är Sabrina Carpenters sjunde album från 2025. Det fortsätter hennes stil med självsäkra, lite retro 70-talsinspirerade poplåtar som handlar om kärlek och relationer på ett modernt, 2020-tals sätt.</p>
+      </div>
+      <div class="card album">
+        <img src="images/albumcover3.png" alt="Album 3">
+        <h4>Albumtitel 3</h4>
+        <p>2024 • Short n’ Sweet är Sabrina Carpenters sjätte album – en snabb, modern och kaxig popskiva som visar hennes självförtroende och cementerar henne som en av popens största just nu, med låtar som “Espresso” och “Please Please Please.”</p>
+      </div>
+    </div>
+
+    <h3>Lyssna</h3>
+
+    <!-- SPOTIFY -->
+    <div class="spotify-wrapper">
+      <img src="images/spotify.png" alt="Spotify ikon" class="spotify-icon" id="spotifyIcon">
+      <div class="spotify-frame" id="spotifyFrame">
+        <iframe 
+          src="https://open.spotify.com/embed/artist/74KM79TiuVKeVCqs8QtB0B" 
+          width="100%" 
+          height="380" 
+          style="border:0;" 
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+        </iframe>
+      </div>
+    </div>
+  
+    <h3>Video</h3>
+
+    <!-- YOUTUBE -->
+    <div class="youtube-wrapper">
+      <div class="youtube-icon" id="youtubeIcon">
+        <div class="yt-circle"></div>
+        <div class="yt-triangle"></div>
+      </div>
+    
+      <div class="youtube-frame" id="youtubeFrame">
+        <div class="video-grid">
+          <div class="yt-video" data-video="https://www.youtube.com/embed/V9vuCByb6js"></div>
+          <div class="yt-video" data-video="https://www.youtube.com/embed/uCNr2iCgSPs"></div>
+          <div class="yt-video" data-video="https://www.youtube.com/embed/hE2DLtuxcUU"></div>
+          <div class="yt-video" data-video="https://www.youtube.com/embed/aSugSGCC12I"></div>
+          <div class="yt-video" data-video="https://www.youtube.com/embed/3m6NBnqLc-g"></div>
+          <div class="yt-video" data-video="https://www.youtube.com/embed/KEG7b851Ric"></div>
+        </div>
+        
+
+        <!-- POPUP -->
+        <div class="video-popup" id="videoPopup">
+          <div class="popup-content">
+            <span id="closePopup">&times;</span>
+            <iframe id="popupFrame" width="100%" height="100%" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERI -->
+  <section id="gallery">
+    <h2>Galleri</h2>
+    <div class="masonry">
+      <img src="images/sabrinacarpenter.jpg.jpg" alt="Sabrina Carpenter">
+      <img src="images/sabrinacarpenter2.jpg.jpg" alt="Sabrina Carpenter">
+      <img src="images/sabrinacarpenter3.jpg.jpg" alt="Sabrina Carpenter">
+      <img src="images/sabrinacarpenter4.jpg.jpg" alt="Sabrina Carpenter">
+      <img src="images/sabrinacarpenter5.jpg.jpg" alt="Sabrina Carpenter">
+      <img src="images/sabrinacarpenter6.jpg.jpg" alt="Sabrina Carpenter">
+    </div>
+  </section>
+
+  <!-- NYHETER -->
+  <section id="news">
+    <h2>Nyheter</h2>
+    <div class="news">
+
+      <div class="news-item">
+        <span>29 sep 2025</span>
+        <div>
+          <b>Sabrina firar 1 månad med albumet “Man’s Best Friend”</b>
+          <div>
+            <a href="https://inmusicblog.com/2025/09/29/sabrina-carpenter-celebrates-one-month-of-mans-best-friend-with-heartfelt-note-to-fans/" target="_blank">Läs mer</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <span>20 sep 2025</span>
+        <div>
+          <b>Sabrina berättar om att känna sig förlöjligad av män</b>
+          <div>
+            <a href="https://www.eonline.com/news/1422899/sabrina-carpenter-on-being-attacked-and-ridiculed-by-men" target="_blank">Läs intervju</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <span>15 sep 2025</span>
+        <div>
+          <b>Kritik mot omslaget till “Man’s Best Friend” – Sabrina svarar</b>
+          <div>
+            <a href="https://variety.com/2025/music/news/sabrina-carpenter-mans-best-friend-art-backlash-fascinating-nuance-1236504815/" target="_blank">Läs mer</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <span>10 sep 2025</span>
+        <div>
+          <b>Stark show på VMAs med drag queens på scen</b>
+          <div>
+            <a href="https://www.them.us/story/sabrina-carpenter-vmas-2025-performance-drag-race-queens" target="_blank">Läs mer</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <small>© 2025 • Inofficiell fansida • Skolprojekt</small>
+  </footer>
+
+  <script src="konstantin.js"></script>
+</body>
+</html>
